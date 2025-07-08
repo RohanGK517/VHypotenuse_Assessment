@@ -1,8 +1,5 @@
 ﻿using System;
-
 using System.Linq;
-
-
 namespace ConsoleApp
 {
     internal class Class3
