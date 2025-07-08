@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace ConsoleApp
 {
     public class Class2
@@ -7,7 +6,7 @@ namespace ConsoleApp
         public void Demo2()
         {
             const int maxAttempts = 3;
-            const int maxTransactions = 5;
+            const int maxTransactions = 4;
             int correctPin;
             int pin;
             int balance = 10000;
