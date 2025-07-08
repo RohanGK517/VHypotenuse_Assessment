@@ -1,4 +1,4 @@
-﻿using ConsoleApp;
+using ConsoleApp;
 using System;
 
 namespace ConsoleApp
@@ -35,8 +35,23 @@ namespace ConsoleApp
             //Class2 c2 = new Class2();
             //c2.Demo2();
 
-            Class3 c3 = new Class3();
-            c3.Demo3();
+            //Class3 c3 = new Class3();
+            //c3.Demo3();
+
+            Class4 c4 = new Class4(); 
+            c4.Method1();
+
+            int res = Class4.Method2(4, 9);        //If the method is static we've to use Class name directly to access
+            Console.WriteLine(res);
+
+            double Emp1 = c4.Salary(basicPay: 30000, workingDays: 30);
+            Console.WriteLine("Salary of Emp1 (used default parameters) is Rs." + Emp1);
+            double Emp2 = c4.Salary(40000,30,2000,1600);
+            Console.WriteLine("Salary of Emp1 (gave all parameters) is Rs." + Emp2);
+            double Emp3 = c4.Salary(20000,25);
+            Console.WriteLine("Salary of Emp1 (overloaded method) is Rs." + Emp3);
+            
+
 
 
         }
