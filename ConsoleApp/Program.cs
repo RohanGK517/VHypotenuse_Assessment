@@ -137,6 +137,21 @@ namespace ConsoleApp
             difficulty dif = difficulty.tumbahigh;
             Console.WriteLine("Difficulty level of learning is :" + dif);
 
+             try
+ {
+     int a = 10, b = 0;
+     int result = a / b;
+     Console.WriteLine(result);
+ }
+ catch (Exception ex)
+ {
+     Console.WriteLine("An error occurred: " + ex.Message);
+ }
+ finally
+ {
+     Console.WriteLine("This block always executes.");
+ }
+
         }
     }
 }
